@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوامر Nikto الكاملة</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #333; }
+        pre { background: #000; color: #0f0; padding: 10px; border-radius: 5px; }
+        .command { background: #ddd; padding: 10px; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🚀 قائمة أوامر Nikto الكاملة مع الشرح</h1>
+    
+    <div class="command">
+        <h2>1. فحص موقع ويب</h2>
+        <pre>nikto -h http://example.com</pre>
+        <p>يفحص الموقع بحثًا عن الثغرات الأمنية.</p>
+    </div>
+
+    <div class="command">
+        <h2>2. فحص موقع يعمل بـ HTTPS</h2>
+        <pre>nikto -h https://example.com</pre>
+        <p>يفحص الموقع عبر بروتوكول HTTPS.</p>
+    </div>
+
+    <div class="command">
+        <h2>3. فحص موقع مع تحديد Port معين</h2>
+        <pre>nikto -h http://example.com -p 8080</pre>
+        <p>يفحص الموقع على بورت غير افتراضي.</p>
+    </div>
+
+    <div class="command">
+        <h2>4. حفظ تقرير الفحص</h2>
+        <pre>nikto -h http://example.com -o report.txt</pre>
+        <p>يحفظ التقرير في ملف نصي.</p>
+    </div>
+
+    <div class="command">
+        <h2>5. تشغيل الفحص في وضع الصمت</h2>
+        <pre>nikto -h http://example.com -Display 2</pre>
+        <p>يقلل من كمية البيانات المعروضة أثناء الفحص.</p>
+    </div>
+
+    <div class="command">
+        <h2>6. استخدام وكيل (Proxy)</h2>
+        <pre>nikto -h http://example.com -useproxy http://127.0.0.1:8080</pre>
+        <p>يجري الفحص عبر وكيل (مثل Burp Suite).</p>
+    </div>
+
+    <div class="command">
+        <h2>7. تشغيل فحص بوقت محدد</h2>
+        <pre>nikto -h http://example.com -timeout 10</pre>
+        <p>يحدد وقتًا أقصى لكل طلب.</p>
+    </div>
+
+    <div class="command">
+        <h2>8. استبعاد اختبارات معينة</h2>
+        <pre>nikto -h http://example.com -Tuning -4</pre>
+        <p>يستثني نوعًا معينًا من الاختبارات.</p>
+    </div>
+
+    <div class="command">
+        <h2>9. فحص نطاق كامل</h2>
+        <pre>nikto -h 192.168.1.0/24</pre>
+        <p>يفحص جميع العناوين داخل النطاق.</p>
+    </div>
+
+    <div class="command">
+        <h2>🔟 عرض جميع الأوامر</h2>
+        <pre>nikto -Help</pre>
+        <p>يعرض جميع الخيارات الممكنة.</p>
+    </div>
+
+</body>
+</html>
