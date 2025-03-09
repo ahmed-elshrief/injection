@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوامر XSSer مع الشرح</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #333; text-align: center; }
+        .command { background-color: #fff; padding: 15px; border-radius: 5px; margin: 10px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        code { background-color: #eee; padding: 5px; border-radius: 3px; display: block; }
+    </style>
+</head>
+<body>
+    <h1>أوامر XSSer مع الشرح</h1>
+
+    <div class="command">
+        <h2>1️⃣ فحص موقع معين بحثًا عن ثغرات XSS</h2>
+        <code>xsser --url "http://example.com/search.php?q=test"</code>
+        <p>يقوم هذا الأمر بفحص الصفحة بحثًا عن نقاط ضعف XSS.</p>
+    </div>
+
+    <div class="command">
+        <h2>2️⃣ فحص موقع مع تحديد User-Agent مخصص</h2>
+        <code>xsser --url "http://example.com" --user-agent "Mozilla/5.0 (XSSer)"</code>
+        <p>يستخدم وكيل مستخدم مخصص لمحاكاة متصفح معين.</p>
+    </div>
+
+    <div class="command">
+        <h2>3️⃣ تنفيذ هجوم XSS مع تخطي حماية WAF</h2>
+        <code>xsser --url "http://example.com" --bypass</code>
+        <p>يحاول تخطي جدران الحماية (WAF) للكشف عن نقاط الضعف.</p>
+    </div>
+
+    <div class="command">
+        <h2>4️⃣ تجربة أكواد XSS متقدمة</h2>
+        <code>xsser --url "http://example.com" --payload "&lt;script&gt;alert('XSS')&lt;/script&gt;"</code>
+        <p>يقوم بحقن كود XSS مخصص في المدخلات.</p>
+    </div>
+
+    <div class="command">
+        <h2>5️⃣ استخدام وضع القوة الغاشمة (Brute Force Mode)</h2>
+        <code>xsser --url "http://example.com" --Brute</code>
+        <p>يقوم بتجربة عدد كبير من الحمولات (Payloads) لاكتشاف XSS.</p>
+    </div>
+
+    <div class="command">
+        <h2>6️⃣ البحث عن ثغرات XSS عبر Google Dorking</h2>
+        <code>xsser --dork "inurl:search.php?q="</code>
+        <p>يبحث عن صفحات قابلة للاستغلال عبر Google.</p>
+    </div>
+
+    <div class="command">
+        <h2>7️⃣ حفظ التقرير بعد الفحص</h2>
+        <code>xsser --url "http://example.com" --output "report.txt"</code>
+        <p>يحفظ نتائج الفحص في ملف نصي.</p>
+    </div>
+
+</body>
+</html>
