@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوامر Wapiti الكاملة</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #333; }
+        pre { background: #000; color: #0f0; padding: 10px; border-radius: 5px; }
+        .command { background: #ddd; padding: 10px; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🚀 قائمة أوامر Wapiti الكاملة مع الشرح</h1>
+    
+    <div class="command">
+        <h2>1. فحص موقع ويب</h2>
+        <pre>wapiti -u http://example.com</pre>
+        <p>يقوم بفحص الموقع بحثًا عن الثغرات الأمنية.</p>
+    </div>
+
+    <div class="command">
+        <h2>2. تحديد أنواع الهجمات</h2>
+        <pre>wapiti -u http://example.com -m sql,xss,crlf,backup,blindsql,htaccess,file,shellshock</pre>
+        <p>يمكنك اختيار أنواع الهجمات التي تريد تجربتها.</p>
+    </div>
+
+    <div class="command">
+        <h2>3. تحديد مستوى العمق أثناء الفحص</h2>
+        <pre>wapiti -u http://example.com -d 5</pre>
+        <p>يحدد مستوى العمق أثناء الزحف (كلما زاد الرقم زاد العمق).</p>
+    </div>
+
+    <div class="command">
+        <h2>4. ضبط الـ User-Agent</h2>
+        <pre>wapiti -u http://example.com --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"</pre>
+        <p>يستخدم User-Agent مخصص لتجنب الحظر من الموقع.</p>
+    </div>
+
+    <div class="command">
+        <h2>5. تشغيل الأداة عبر Proxy</h2>
+        <pre>wapiti -u http://example.com --proxy http://127.0.0.1:8080</pre>
+        <p>يستخدم بروكسي مثل Burp Suite أثناء الفحص.</p>
+    </div>
+
+    <div class="command">
+        <h2>6. حفظ تقرير الفحص</h2>
+        <pre>wapiti -u http://example.com -f html -o report.html</pre>
+        <p>يحفظ التقرير في ملف HTML لقراءته لاحقًا.</p>
+    </div>
+
+    <div class="command">
+        <h2>7. استئناف الفحص بعد التوقف</h2>
+        <pre>wapiti -u http://example.com --resume</pre>
+        <p>يستكمل الفحص من حيث توقف آخر مرة.</p>
+    </div>
+
+    <p>📌 هذه بعض الأوامر المهمة، يمكنك الاطلاع على المزيد باستخدام:</p>
+    <pre>wapiti -h</pre>
+
+</body>
+</html>
