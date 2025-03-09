@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل أوامر كالي لينكس</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; background-color: #222; color: #ddd; padding: 20px; }
+        h1, h2 { color: #4caf50; }
+        code { background-color: #333; padding: 5px; border-radius: 5px; display: block; }
+    </style>
+</head>
+<body>
+    <h1>📌 دليل أوامر كالي لينكس</h1>
+    <h2>1️⃣ خطوات تثبيت كالي لينكس</h2>
+    <p>يمكنك تحميل كالي لينكس من الموقع الرسمي:</p>
+    <p><a href="https://www.kali.org/get-kali/" target="_blank">تحميل كالي لينكس</a></p>
+    <p>لحرق النظام على USB يمكنك استخدام Rufus في ويندوز أو الأمر التالي في لينكس:</p>
+    <code>sudo dd if=kali-linux.iso of=/dev/sdX bs=4M status=progress</code>
+    <p>بعدها قم بالإقلاع من الفلاشة واتبع خطوات التثبيت.</p>
+    
+    <h2>2️⃣ تحديث النظام بعد التثبيت</h2>
+    <code>sudo apt update && sudo apt full-upgrade -y</code>
+    
+    <h2>3️⃣ أوامر أساسية في كالي لينكس</h2>
+    <h3>🔹 تحديث المستودعات:</h3>
+    <code>sudo apt update</code>
+    
+    <h3>🔹 تثبيت أداة معينة:</h3>
+    <code>sudo apt install tool-name</code>
+    
+    <h3>🔹 البحث عن أداة:</h3>
+    <code>apt search tool-name</code>
+    
+    <h3>🔹 معرفة معلومات أداة:</h3>
+    <code>man tool-name</code>
+    
+    <h3>🔹 تشغيل أداة بصلاحيات الروت:</h3>
+    <code>sudo tool-name</code>
+    
+    <h2>4️⃣ أدوات الاختراق المهمة</h2>
+    <h3>📌 Nmap - لفحص الشبكات</h3>
+    <code>nmap -sV 192.168.1.1</code>
+    
+    <h3>📌 Metasploit - لإدارة الثغرات</h3>
+    <code>msfconsole</code>
+    
+    <h3>📌 Hydra - هجوم تخمين كلمات المرور</h3>
+    <code>hydra -l admin -P passwords.txt 192.168.1.1 ssh</code>
+    
+    <h2>5️⃣ أوامر النظام وإدارة الملفات</h2>
+    <h3>🔹 عرض الملفات والمجلدات:</h3>
+    <code>ls -la</code>
+    
+    <h3>🔹 التنقل بين المجلدات:</h3>
+    <code>cd /path/to/directory</code>
+    
+    <h3>🔹 إنشاء ملف جديد:</h3>
+    <code>touch filename.txt</code>
+    
+    <h3>🔹 حذف ملف:</h3>
+    <code>rm filename.txt</code>
+    
+    <h3>🔹 حذف مجلد:</h3>
+    <code>rm -r foldername</code>
+    
+    <h3>🔹 نسخ ملف:</h3>
+    <code>cp file1 file2</code>
+    
+    <h3>🔹 نقل ملف:</h3>
+    <code>mv file1 /destination/path/</code>
+    
+    <h3>🔹 عرض محتوى ملف:</h3>
+    <code>cat filename.txt</code>
+    
+    <h3>🔹 تعديل ملف باستخدام Nano:</h3>
+    <code>nano filename.txt</code>
+    
+    <h2>6️⃣ أوامر إدارة المستخدمين والصلاحيات</h2>
+    <h3>🔹 إضافة مستخدم جديد:</h3>
+    <code>sudo adduser username</code>
+    
+    <h3>🔹 تغيير كلمة المرور:</h3>
+    <code>passwd</code>
+    
+    <h3>🔹 منح مستخدم صلاحيات الروت:</h3>
+    <code>sudo usermod -aG sudo username</code>
+    
+    <h3>🔹 معرفة المستخدم الحالي:</h3>
+    <code>whoami</code>
+    
+    <h2>7️⃣ أوامر الشبكات</h2>
+    <h3>🔹 عرض عنوان IP:</h3>
+    <code>ip a</code>
+    
+    <h3>🔹 اختبار الاتصال:</h3>
+    <code>ping 8.8.8.8</code>
+    
+    <h3>🔹 عرض البورتات المفتوحة:</h3>
+    <code>netstat -tulnp</code>
+    
+    <h3>🔹 تحليل حزم الشبكة:</h3>
+    <code>tcpdump -i eth0</code>
+    
+    <p>🔹 تمت كتابته بواسطة ChatGPT 🚀</p>
+</body>
+</html>
