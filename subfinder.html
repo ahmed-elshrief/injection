@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع أوامر Subfinder</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #333; text-align: center; }
+        .command { background: #fff; padding: 10px; margin: 10px 0; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); }
+        .cmd { font-weight: bold; color: #007BFF; }
+    </style>
+</head>
+<body>
+    <h1>جميع أوامر Subfinder مع الشرح</h1>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com</p>
+        <p>يجمع جميع النطاقات الفرعية لموقع معين باستخدام المصادر الافتراضية.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -o subdomains.txt</p>
+        <p>يحفظ جميع النطاقات الفرعية في ملف نصي.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -sources crtsh,shodan</p>
+        <p>استخدام مصادر إضافية مثل crt.sh و Shodan للحصول على نطاقات أكثر.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -dL domains.txt -o results.txt</p>
+        <p>تشغيل الأداة على قائمة مواقع وحفظ النتائج في ملف نصي.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -o subdomains.txt && cat subdomains.txt | httprobe</p>
+        <p>تشغيل Subfinder ثم فحص المواقع النشطة باستخدام httprobe.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -o subdomains.txt && cat subdomains.txt | httpx -silent -title -status-code</p>
+        <p>تشغيل Subfinder ثم استخراج عناوين الصفحات وأكواد الاستجابة.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -silent</p>
+        <p>إخفاء المخرجات غير المهمة وعرض النطاقات فقط.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -recursive</p>
+        <p>تفعيل البحث العميق داخل النطاقات الفرعية لاكتشاف نطاقات أكثر.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -nW</p>
+        <p>تعطيل البحث عن نطاقات Wildcard.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -t 50</p>
+        <p>تحديد عدد الـ Threads لزيادة سرعة البحث (هنا تم ضبطها على 50).</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -v</p>
+        <p>تفعيل وضع التفاصيل (Verbose Mode) لمعرفة المصادر التي تم استخدامها.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">subfinder -d example.com -config /path/to/config.yaml</p>
+        <p>استخدام ملف إعدادات مخصص لتشغيل الأداة بمصادر وبيانات API مختلفة.</p>
+    </div>
+
+</body>
+</html>
