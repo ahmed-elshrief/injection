@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - Ahmed.R أدوات الأمن السيبراني</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#1F2937',
+                        dark: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <header class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="icon.png" alt="شعار أنونيموس" class="w-12 h-12 ml-4">
+                    <h1 class="text-2xl font-bold text-primary">Ahmed.R <span class="text-gray-400">للأمن السيبراني</span></h1>
+                </div>
+                <div class="flex items-center">
+                    <nav class="ml-6">
+                        <ul class="flex space-x-6 space-x-reverse">
+                            <li><a href="index.html" class="hover:text-primary transition">الرئيسية</a></li>
+                            <li><a href="about.html" class="text-primary hover:text-white transition">من نحن</a></li>
+                            <li><a href="contact.html" class="hover:text-primary transition">اتصل بنا</a></li>
+                        </ul>
+                    </nav>
+                    <button id="langToggle" class="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded-md mr-4 text-sm">English</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center lang-ar">من نحن</h2>
+            <h2 class="text-4xl font-bold mb-8 text-center lang-en hidden">About Us</h2>
+            
+            <div class="bg-gray-800 rounded-lg shadow-xl p-8 mb-12">
+                <div class="flex flex-col md:flex-row items-center mb-8">
+                    <img src="icon.png" alt="شعار أنونيموس" class="w-32 h-32 md:ml-8 mb-6 md:mb-0">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-primary lang-ar">مهمتنا</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-primary lang-en hidden">Our Mission</h3>
+                        <p class="text-gray-300 mb-4 lang-ar">
+                            نحن ملتزمون بتزويد محترفي الأمن السيبراني، والمخترقين الأخلاقيين، والمهتمين بالأمن بمعلومات شاملة حول أكثر الأدوات والتقنيات فعالية في هذا المجال.
+                        </p>
+                        <p class="text-gray-300 mb-4 lang-en hidden">
+                            We are dedicated to providing cybersecurity professionals, ethical hackers, and security enthusiasts with comprehensive information about the most effective tools and techniques in the field.
+                        </p>
+                        <p class="text-gray-300 lang-ar">
+                            المعرفة قوة، وهدفنا هو تمكين مجتمع الأمن بالموارد التي يحتاجونها لحماية الأنظمة والشبكات من المهاجمين الخبيثين.
+                        </p>
+                        <p class="text-gray-300 lang-en hidden">
+                            Knowledge is power, and our goal is to empower the security community with the resources they need to protect systems and networks from malicious actors.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-8">
+                    <h3 class="text-2xl font-bold mb-4 text-primary lang-ar">عن Ahmed.R</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-primary lang-en hidden">About Ahmed.R</h3>
+                    <p class="text-gray-300 mb-4 lang-ar">
+                        Ahmed.R هو محترف في مجال الأمن السيبراني مع خبرة واسعة في اختبار الاختراق، وتقييم الثغرات، وأبحاث الأمن. بشغف للأمن المعلوماتي، قام Ahmed بتجميع هذه المجموعة من الأدوات لمساعدة الآخرين في هذا المجال.
+                    </p>
+                    <p class="text-gray-300 mb-4 lang-en hidden">
+                        Ahmed.R is a cybersecurity professional with extensive experience in penetration testing, vulnerability assessment, and security research. With a passion for information security, Ahmed has compiled this collection of tools to help others in the field.
+                    </p>
+                    <p class="text-gray-300 lang-ar">
+                        يعمل هذا الموقع كمركز موارد لأدوات الأمن السيبراني، مع التركيز على التطبيقات العملية وسيناريوهات العالم الحقيقي. جميع الأدوات المعروضة هنا مخصصة للاستخدام الأخلاقي في اختبارات الأمان المصرح بها والتقييم.
+                    </p>
+                    <p class="text-gray-300 lang-en hidden">
+                        This website serves as a resource hub for cybersecurity tools, focusing on practical applications and real-world scenarios. All tools featured here are intended for ethical use in authorized security testing and assessment.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+                <h3 class="text-2xl font-bold mb-4 text-primary lang-ar">بيان أخلاقي</h3>
+                <h3 class="text-2xl font-bold mb-4 text-primary lang-en hidden">Ethical Statement</h3>
+                <p class="text-gray-300 mb-4 lang-ar">
+                    الأدوات والمعلومات المقدمة على هذا الموقع هي لأغراض تعليمية ومهنية فقط. نحن ندعو إلى الكشف المسؤول وممارسات الاختراق الأخلاقي.
+                </p>
+                <p class="text-gray-300 mb-4 lang-en hidden">
+                    The tools and information provided on this website are for educational and professional purposes only. We advocate for responsible disclosure and ethical hacking practices.
+                </p>
+                <p class="text-gray-300 mb-4 lang-ar">
+                    احصل دائمًا على التصريح المناسب قبل إجراء اختبارات أمنية على أي نظام أو شبكة. الاختبار غير المصرح به غير قانوني وغير أخلاقي.
+                </p>
+                <p class="text-gray-300 mb-4 lang-en hidden">
+                    Always obtain proper authorization before conducting security tests on any system or network. Unauthorized testing is illegal and unethical.
+                </p>
+                <div class="bg-gray-700 p-4 rounded-lg mt-6">
+                    <p class="text-gray-300 italic lang-ar">
+                        "مع القوة العظيمة تأتي مسؤولية عظيمة. استخدم هذه الأدوات لبناء عالم رقمي أكثر أمانًا."
+                    </p>
+                    <p class="text-gray-300 italic lang-en hidden">
+                        "With great power comes great responsibility. Use these tools to build a safer digital world."
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400 lang-ar">© 2025 Ahmed.R للأمن السيبراني. جميع الحقوق محفوظة.</p>
+                    <p class="text-gray-400 lang-en hidden">© 2025 Ahmed.R CyberSec. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="contact.html" class="text-gray-400 hover:text-primary transition lang-ar">اتصل بنا</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-primary transition lang-en hidden">Contact</a>
+                    <a href="about.html" class="text-gray-400 hover:text-primary transition lang-ar">من نحن</a>
+                    <a href="about.html" class="text-gray-400 hover:text-primary transition lang-en hidden">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set dark mode
+            document.documentElement.classList.add('dark');
+            
+            // Language toggle
+            const langToggle = document.getElementById('langToggle');
+            const arElements = document.querySelectorAll('.lang-ar');
+            const enElements = document.querySelectorAll('.lang-en');
+            const htmlElement = document.documentElement;
+            
+            langToggle.addEventListener('click', function() {
+                if (htmlElement.lang === 'ar') {
+                    // Switch to English
+                    htmlElement.lang = 'en';
+                    htmlElement.dir = 'ltr';
+                    langToggle.textContent = 'العربية';
+                    
+                    arElements.forEach(el => el.classList.add('hidden'));
+                    enElements.forEach(el => el.classList.remove('hidden'));
+                } else {
+                    // Switch to Arabic
+                    htmlElement.lang = 'ar';
+                    htmlElement.dir = 'rtl';
+                    langToggle.textContent = 'English';
+                    
+                    arElements.forEach(el => el.classList.remove('hidden'));
+                    enElements.forEach(el => el.classList.add('hidden'));
+                }
+            });
+        });
+    </script>
+</body>
+</html>

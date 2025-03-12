@@ -1,50 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQLMap Guide From Doc Ahmed.R</title>
+    
+    <title>Ahmed.R أدوات الأمن السيبراني</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#1F2937',
+                        dark: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white p-6">
-    <div class="max-w-4xl mx-auto">
-        <header class="text-center py-6">
-            <h1 class="text-5xl font-bold text-green-400">SQLMap Guide</h1>
-            <p class="text-gray-400 mt-2">Made By Ahmed.R | <a href="https://wa.me/201098662418" class="text-blue-400">WhatsApp</a></p>
-        </header>
-        
-        <nav class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
-            <a href="#basic" class="text-green-300 mx-3">Basic Commands</a>
-            <a href="#advanced" class="text-green-300 mx-3">Advanced Commands</a>
-            <a href="#contact" class="text-green-300 mx-3">Contact</a>
-        </nav>
-        
-        <section id="basic" class="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-semibold text-green-300">Basic Commands</h2>
-            <pre class="bg-gray-700 p-3 rounded text-sm overflow-x-auto">
-python sqlmap.py -u "http://example.com/index.php?id=1"  # Scan for SQL Injection
-python sqlmap.py -u "http://example.com/index.php?id=1" --dbs  # Fetch database names
-python sqlmap.py -u "http://example.com/index.php?id=1" --dbms=mysql  # Specify database type
-            </pre>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <header class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="icon.png" alt="شعار أنونيموس" class="w-12 h-12 ml-4">
+                    <h1 class="text-2xl font-bold text-primary">Ahmed.R <span class="text-gray-400">للأمن السيبراني</span></h1>
+                </div>
+                <div class="flex items-center">
+                    <nav class="ml-6">
+                        <ul class="flex space-x-6 space-x-reverse">
+                            <li><a href="index.html" class="text-primary hover:text-white transition">الرئيسية</a></li>
+                            <li><a href="about.html" class="hover:text-primary transition">من نحن</a></li>
+                            <li><a href="contact.html" class="hover:text-primary transition">اتصل بنا</a></li>
+                        </ul>
+                    </nav>
+                    <button id="langToggle" class="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded-md mr-4 text-sm">English</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center lang-ar">أدوات الأمن السيبراني</h2>
+            <h2 class="text-4xl font-bold mb-8 text-center lang-en hidden">Cybersecurity Tools</h2>
+            
+            <p class="text-xl text-center max-w-3xl mx-auto mb-12 text-gray-400 lang-ar">
+                مجموعة من أدوات الأمن السيبراني القوية لاختبار الاختراق، وفحص الثغرات، وتقييم الأمن.
+            </p>
+            <p class="text-xl text-center max-w-3xl mx-auto mb-12 text-gray-400 lang-en hidden">
+                A collection of powerful cybersecurity tools for penetration testing, vulnerability scanning, and security assessment.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tool Cards -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">XSStrike</h3>
+                        <p class="text-gray-400 lang-ar">أداة متقدمة للكشف عن ثغرات XSS واستغلالها.</p>
+                        <p class="text-gray-400 lang-en hidden">Advanced XSS detection and exploitation tool.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Kali Commands</h3>
+                        <p class="text-gray-400 lang-ar">أوامر كالي لينكس الأساسية لاختبار الاختراق.</p>
+                        <p class="text-gray-400 lang-en hidden">Essential Kali Linux commands for penetration testing.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Katana</h3>
+                        <p class="text-gray-400 lang-ar">إطار عمل متطور للزحف واستكشاف المواقع.</p>
+                        <p class="text-gray-400 lang-en hidden">A next-generation crawling and spidering framework.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Nikto</h3>
+                        <p class="text-gray-400 lang-ar">ماسح خوادم الويب للملفات الخطرة والثغرات الأمنية.</p>
+                        <p class="text-gray-400 lang-en hidden">Web server scanner for dangerous files and vulnerabilities.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Nuclei</h3>
+                        <p class="text-gray-400 lang-ar">ماسح ثغرات سريع وقابل للتخصيص.</p>
+                        <p class="text-gray-400 lang-en hidden">Fast and customizable vulnerability scanner.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Subfinder</h3>
+                        <p class="text-gray-400 lang-ar">أداة اكتشاف النطاقات الفرعية لتقييمات الأمان.</p>
+                        <p class="text-gray-400 lang-en hidden">Subdomain discovery tool for security assessments.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Wapiti</h3>
+                        <p class="text-gray-400 lang-ar">ماسح ثغرات تطبيقات الويب.</p>
+                        <p class="text-gray-400 lang-en hidden">Web application vulnerability scanner.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">XSSer</h3>
+                        <p class="text-gray-400 lang-ar">إطار عمل آلي للكشف عن ثغرات XSS.</p>
+                        <p class="text-gray-400 lang-en hidden">Automated framework for XSS vulnerability detection.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 hover:bg-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">روابط مفيدة</h3>
+                        <p class="text-gray-400 lang-ar">مجموعة من موارد ومراجع الأمن السيبراني.</p>
+                        <p class="text-gray-400 lang-en hidden">Collection of cybersecurity resources and references.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="advanced" class="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-semibold text-green-300">Advanced Commands</h2>
-            <pre class="bg-gray-700 p-3 rounded text-sm overflow-x-auto">
-python sqlmap.py -u "http://example.com/index.php?id=1" --tamper=space2comment  # Bypass WAF
-python sqlmap.py -u "http://example.com/index.php?id=1" --os-shell  # Get OS shell
-python sqlmap.py -u "http://example.com/index.php?id=1" --cookie="sessionid=xyz123"  # Use cookies
-python sqlmap.py -u "http://example.com/index.php?id=1" --dump-all  # Extract full database
-            </pre>
-        </section>
-        
-        <section id="contact" class="mt-6 p-6 bg-gray-800 rounded-lg shadow-lg text-center">
-            <h2 class="text-3xl font-semibold text-green-300">Contact</h2>
-            <p class="text-gray-400">For more info, contact me on WhatsApp:</p>
-            <a href="https://wa.me/201098662418" class="text-blue-400 text-lg">+201098662418</a>
-        </section>
-        
-        <footer class="text-center text-gray-500 mt-6">&copy; 2025 Ahmed.R | All rights reserved.</footer>
-    </div>
+    </main>
+
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400 lang-ar">© 2025 Ahmed.R للأمن السيبراني. جميع الحقوق محفوظة.</p>
+                    <p class="text-gray-400 lang-en hidden">© 2025 Ahmed.R CyberSec. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="contact.html" class="text-gray-400 hover:text-primary transition lang-ar">اتصل بنا</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-primary transition lang-en hidden">Contact</a>
+                    <a href="about.html" class="text-gray-400 hover:text-primary transition lang-ar">من نحن</a>
+                    <a href="about.html" class="text-gray-400 hover:text-primary transition lang-en hidden">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set dark mode
+            document.documentElement.classList.add('dark');
+            
+            // Language toggle
+            const langToggle = document.getElementById('langToggle');
+            const arElements = document.querySelectorAll('.lang-ar');
+            const enElements = document.querySelectorAll('.lang-en');
+            const htmlElement = document.documentElement;
+            
+            langToggle.addEventListener('click', function() {
+                if (htmlElement.lang === 'ar') {
+                    // Switch to English
+                    htmlElement.lang = 'en';
+                    htmlElement.dir = 'ltr';
+                    langToggle.textContent = 'العربية';
+                    
+                    arElements.forEach(el => el.classList.add('hidden'));
+                    enElements.forEach(el => el.classList.remove('hidden'));
+                } else {
+                    // Switch to Arabic
+                    htmlElement.lang = 'ar';
+                    htmlElement.dir = 'rtl';
+                    langToggle.textContent = 'English';
+                    
+                    arElements.forEach(el => el.classList.remove('hidden'));
+                    enElements.forEach(el => el.classList.add('hidden'));
+                }
+            });
+        });
+    </script>
 </body>
 </html>

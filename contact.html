@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - Ahmed.R أدوات الأمن السيبراني</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#1F2937',
+                        dark: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <header class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="icon.png" alt="شعار أنونيموس" class="w-12 h-12 ml-4">
+                    <h1 class="text-2xl font-bold text-primary">Ahmed.R <span class="text-gray-400">للأمن السيبراني</span></h1>
+                </div>
+                <div class="flex items-center">
+                    <nav class="ml-6">
+                        <ul class="flex space-x-6 space-x-reverse">
+                            <li><a href="index.html" class="hover:text-primary transition">الرئيسية</a></li>
+                            <li><a href="about.html" class="hover:text-primary transition">من نحن</a></li>
+                            <li><a href="contact.html" class="text-primary hover:text-white transition">اتصل بنا</a></li>
+                        </ul>
+                    </nav>
+                    <button id="langToggle" class="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded-md mr-4 text-sm">English</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center lang-ar">اتصل بنا</h2>
+            <h2 class="text-4xl font-bold mb-8 text-center lang-en hidden">Contact Us</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-primary lang-ar">تواصل معنا</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-primary lang-en hidden">Get in Touch</h3>
+                    
+                  <!--  <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2 lang-ar">الاسم</label>
+                            <label for="name" class="block text-gray-300 mb-2 lang-en hidden">Name</label>
+                            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2 lang-ar">البريد الإلكتروني</label>
+                            <label for="email" class="block text-gray-300 mb-2 lang-en hidden">Email</label>
+                            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2 lang-ar">الرسالة</label>
+                            <label for="message" class="block text-gray-300 mb-2 lang-en hidden">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-primary hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg transition lang-ar">إرسال الرسالة</button>
+                        <button type="submit" class="bg-primary hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg transition lang-en hidden">Send Message</button>
+                    </form>-->
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-primary lang-ar">تواصل معنا</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-primary lang-en hidden">Connect With Us</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center ml-4">
+                                <i class="fab fa-whatsapp text-2xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold lang-ar">واتساب</h4>
+                                <h4 class="text-lg font-semibold lang-en hidden">WhatsApp</h4>
+                                <a href="https://wa.me/1234567890" class="text-gray-300 hover:text-primary transition">+201098662418</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center ml-4">
+                                <i class="fab fa-facebook-f text-2xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">فيسبوك</h4>
+                                <h4 class="text-lg font-semibold lang-en hidden">Facebook</h4>
+                                <a href="https://www.facebook.com/profile.php?id=100055088783209" class="text-gray-300 hover:text-primary transition">Ahmed Reda</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center ml-4">
+                                <i class="far fa-envelope text-2xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold lang-ar">البريد الإلكتروني</h4>
+                                <h4 class="text-lg font-semibold lang-en hidden">Email</h4>
+                                <a href="mailto:Empirewiki200@gmail.com" class="text-gray-300 hover:text-primary transition">Empirewiki200@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-700">
+                        <h4 class="text-lg font-semibold mb-4 lang-ar">تابع صفحتنا</h4>
+                        <h4 class="text-lg font-semibold mb-4 lang-en hidden">Follow Our Page</h4>
+                        <a href="https://facebook.com/ahmedr.cybersec" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition lang-ar">
+                            <i class="fab fa-facebook-f ml-2"></i> صفحة الفيسبوك
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61573703837866" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition lang-en hidden">
+                            <i class="fab fa-facebook-f mr-2"></i> Facebook Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-primary lang-ar">الأسئلة الشائعة</h3>
+                <h3 class="text-2xl font-bold mb-6 text-primary lang-en hidden">Frequently Asked Questions</h3>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2 lang-ar">هل هذه الأدوات مجانية للاستخدام؟</h4>
+                        <h4 class="text-lg font-semibold mb-2 lang-en hidden">Are these tools free to use?</h4>
+                        <p class="text-gray-300 lang-ar">نعم، جميع الأدوات المعروضة على هذا الموقع مفتوحة المصدر ومجانية للاستخدام للأغراض الأخلاقية.</p>
+                        <p class="text-gray-300 lang-en hidden">Yes, all the tools featured on this website are open-source and free to use for ethical purposes.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2 lang-ar">هل يمكنني طلب معلومات حول أداة معينة؟</h4>
+                        <h4 class="text-lg font-semibold mb-2 lang-en hidden">Can I request information about a specific tool?</h4>
+                        <p class="text-gray-300 lang-ar">لا تتردد في الاتصال بنا بطلباتك، وسنبذل قصارى جهدنا لتوفير معلومات حول الأدوات التي تهتم بها.</p>
+                        <p class="text-gray-300 lang-en hidden">Feel free to contact us with your requests, and we'll do our best to provide information about the tools you're interested in.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2 lang-ar">هل تقدمون خدمات استشارية في مجال الأمن السيبراني؟</h4>
+                        <h4 class="text-lg font-semibold mb-2 lang-en hidden">Do you offer cybersecurity consulting services?</h4>
+                        <p class="text-gray-300 lang-ar">نعم، نقدم خدمات استشارية احترافية في مجال الأمن السيبراني. يرجى الاتصال بنا للحصول على مزيد من المعلومات حول خدماتنا وأسعارنا.</p>
+                        <p class="text-gray-300 lang-en hidden">Yes, we provide professional cybersecurity consulting services. Please contact us for more information about our services and rates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400 lang-ar">© 2025 Ahmed.R للأمن السيبراني. جميع الحقوق محفوظة.</p>
+                    <p class="text-gray-400 lang-en hidden">© 2025 Ahmed.R CyberSec. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="contact.html" class="text-gray-400 hover:text-primary transition lang-ar">اتصل بنا</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-primary transition lang-en hidden">Contact</a>
+                    <a href="about.html" class="text-gray-400 hover:text-primary transition lang-ar">من نحن</a>
+                    <a href="about.html" class="text-gray-400 hover:text-primary transition lang-en hidden">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set dark mode
+            document.documentElement.classList.add('dark');
+            
+            // Language toggle
+            const langToggle = document.getElementById('langToggle');
+            const arElements = document.querySelectorAll('.lang-ar');
+            const enElements = document.querySelectorAll('.lang-en');
+            const htmlElement = document.documentElement;
+            
+            langToggle.addEventListener('click', function() {
+                if (htmlElement.lang === 'ar') {
+                    // Switch to English
+                    htmlElement.lang = 'en';
+                    htmlElement.dir = 'ltr';
+                    langToggle.textContent = 'العربية';
+                    
+                    arElements.forEach(el => el.classList.add('hidden'));
+                    enElements.forEach(el => el.classList.remove('hidden'));
+                } else {
+                    // Switch to Arabic
+                    htmlElement.lang = 'ar';
+                    htmlElement.dir = 'rtl';
+                    langToggle.textContent = 'English';
+                    
+                    arElements.forEach(el => el.classList.remove('hidden'));
+                    enElements.forEach(el => el.classList.add('hidden'));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
