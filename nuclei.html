@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع أوامر Nuclei</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #333; text-align: center; }
+        .command { background: #fff; padding: 10px; margin: 10px 0; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); }
+        .cmd { font-weight: bold; color: #007BFF; }
+    </style>
+</head>
+<body>
+    <h1>جميع أوامر Nuclei مع الشرح</h1>
+
+    <div class="command">
+        <p class="cmd">nuclei -u http://example.com</p>
+        <p>فحص موقع واحد باستخدام القوالب الافتراضية.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -l urls.txt</p>
+        <p>فحص قائمة من المواقع المخزنة في ملف نصي.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -u http://example.com -t /path/to/template.yaml</p>
+        <p>استخدام قالب مخصص لفحص موقع معين.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -t cves/</p>
+        <p>فحص الثغرات الأمنية المعروفة CVEs.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -t vulnerabilities/</p>
+        <p>فحص الثغرات الأمنية العامة.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -tags xss,sqli</p>
+        <p>تشغيل الفحص فقط على ثغرات XSS و SQL Injection.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -severity critical</p>
+        <p>تشغيل الفحص على الثغرات الحرجة فقط.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -u http://example.com -o results.txt</p>
+        <p>حفظ نتائج الفحص في ملف نصي.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -update</p>
+        <p>تحديث القوالب إلى أحدث إصدار.</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -silent</p>
+        <p>تشغيل الأداة في الوضع الصامت (بدون تفاصيل إضافية).</p>
+    </div>
+
+    <div class="command">
+        <p class="cmd">nuclei -stats</p>
+        <p>عرض إحصائيات الفحص أثناء التشغيل.</p>
+    </div>
+
+</body>
+</html>
